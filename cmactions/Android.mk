@@ -34,7 +34,8 @@ ifneq ($(INCREMENTAL_BUILDS),)
     LOCAL_JACK_ENABLED := incremental
 endif
 
-include frameworks/base/packages/SettingsLib/common.mk
+# commented out by reivilibre so that hybris-boot compiles
+#include frameworks/base/packages/SettingsLib/common.mk
 
 include $(BUILD_PACKAGE)
 
